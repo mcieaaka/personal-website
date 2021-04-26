@@ -1,25 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import React ,{ useState, useEffect } from 'react';
+import LoadingScreen  from 'react-loading-screen';
+import logo_sp from './mainlogo.svg';
+import Nav from './components/nav/Nav';
 
-function App() {
-  return (
+function App(){
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 2500)
+  }, [])
+  return(
+    <>
+    {loading === false ? (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
     </div>
+
+      ) : (
+
+      <LoadingScreen
+    loading={true}
+    bgColor='#20163F'
+    spinnerColor='#C6A603'
+    textColor='#C6A603'
+    logoSrc={logo_sp}
+  > 
+  </LoadingScreen>
+      )}
+  </>
   );
 }
 
-export default App;
+export default App
