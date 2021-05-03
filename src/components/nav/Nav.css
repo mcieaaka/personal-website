@@ -1,3 +1,11 @@
 .back{
     background-color: #383152;
 }
+.nav-link{
+    text-align: center;
+    color:#C6A603;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color:#F7527C;
+}

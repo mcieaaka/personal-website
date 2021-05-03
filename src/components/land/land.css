@@ -1,0 +1,14 @@
+#landing{
+    margin:10% 5%;
+}
+.abt-con{
+    color:#47CEC5;
+}
+.my-pic{
+    text-align: center;
+}
+@media screen and (max-width:500px){
+    #landing{
+        margin:25% 2.5%;
+    }
+}

@@ -3,6 +3,7 @@ import React ,{ useState, useEffect } from 'react';
 import LoadingScreen  from 'react-loading-screen';
 import logo_sp from './mainlogo.svg';
 import Nav from './components/nav/Nav';
+import Land from './components/land/land';
 
 function App(){
   const [loading, setLoading] = useState(true)
@@ -15,6 +16,7 @@ function App(){
     {loading === false ? (
     <div className="App">
       <Nav />
+      <Land />
     </div>
 
       ) : (
