@@ -1,14 +1,37 @@
+@font-face{
+    font-family: Montserrat;
+    src: url(./Montserrat-Regular.ttf);
+}
 #landing{
     margin:10% 5%;
 }
 .abt-con{
-    color:#47CEC5;
+    color:white;
+}
+.my-pic img{
+    border-radius:50%;
 }
 .my-pic{
     text-align: center;
 }
 @media screen and (max-width:500px){
     #landing{
-        margin:25% 2.5%;
+        margin-top:25%;
+        padding:0;
     }
+    .my-pic img{
+        padding-bottom:10px;
+        width: 80%;
+    }
+}
+#land-head{
+    font-weight: bold;
+    font-family:Montserrat;
+    color: #C6A603;
+    text-align: center;
+}
+#land-para{
+    margin-top:20px;
+    font-family: sans-serif;
+    text-align:center;
 }

@@ -4,6 +4,7 @@ import LoadingScreen  from 'react-loading-screen';
 import logo_sp from './mainlogo.svg';
 import Nav from './components/nav/Nav';
 import Land from './components/land/land';
+import Projects from './components/projects/Projects';
 
 function App(){
   const [loading, setLoading] = useState(true)
@@ -17,6 +18,7 @@ function App(){
     <div className="App">
       <Nav />
       <Land />
+      <Projects />
     </div>
 
       ) : (

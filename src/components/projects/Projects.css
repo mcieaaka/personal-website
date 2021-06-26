@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(./assets/Montserrat-Regular.ttf);
+}
+#speakacc{
+    position: relative;
+    margin-top:40px ;
+    margin-bottom: 40px ;
+}
+#spks {
+    width:70%;
+    margin-right:auto;
+    margin-left:auto;
+    border: 5px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to bottom, #1475AB, #C6A603);
+}
+#rightarr{
+    position:absolute;
+    margin-top:8%;
+    right:75px;
+    width:40px;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  #leftarr {
+      position:absolute;
+      margin-top:8%;
+      left:75px;
+      width:40px;
+      z-index: 10;
+      cursor: pointer;
+      user-select: none;
+  }
+  .slide {
+    display:none;
+  }
+  .slide.active {
+    display:block;
+    animation: cardslider 1s ease-in;
+  }
+  @keyframes cardslider {
+      from{opacity:0}
+      to  {opacity:1}
+  }
+.progressBar{
+    display: flex;
+    justify-content: center;
+    color:#C6A603;
+}
+.screen-hor{
+    display: block;
+}
+progress{
+    margin:8px 3px 0px 3px;
+    -webkit-appearance:none;
+    height: 10px;
+    width:250px
+}
+progress::-webkit-progress-bar{background-color:#1475AB;border-radius:24px;}
+progress::-webkit-progress-value{background-color:#C6A603;border-radius:24px;}
